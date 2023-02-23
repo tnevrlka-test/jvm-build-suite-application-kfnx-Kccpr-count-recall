@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-bslt
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:bf0398a1ed43435a90c0f3b96a52653a
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:ab1788914e42bfbaf4815b7214469d04840d7654b715d6d14c016f7652e68959
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
