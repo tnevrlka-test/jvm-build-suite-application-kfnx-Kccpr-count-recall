@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-bslt
+  namespace: jvm-build-rdce-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:ab1788914e42bfbaf4815b7214469d04840d7654b715d6d14c016f7652e68959
+        name: container-image
+        resources: {}
+status: {}
