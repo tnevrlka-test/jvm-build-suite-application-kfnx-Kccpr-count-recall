@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: jvm-build-suite-component-bslt
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: jvm-build-suite-component-bslt
+    app.kubernetes.io/part-of: jvm-build-suite-application-kfnx
+  name: jvm-build-suite-componentgu2y
+  namespace: jvm-build-rdce-tenant
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: jvm-build-suite-component-bslt
+    weight: 100
+status: {}
